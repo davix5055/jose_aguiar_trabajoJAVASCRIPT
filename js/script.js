@@ -7,7 +7,7 @@
     const noticias = document.getElementById('noticias')
 
     if(noticias){
- fetch('../noticiasJSON/noticias.json') //Carga de archivo JSON
+ fetch('https://davix5055.github.io/jose_aguiar_trabajoJAVASCRIPT/noticiasJSON/noticias.json') //Carga de archivo JSON
     .then(response => response.json())
     .then(data =>{
         data.forEach(noticia => {
