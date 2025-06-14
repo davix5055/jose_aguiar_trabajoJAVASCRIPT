@@ -1,0 +1,30 @@
+[
+
+    {
+        "titulo": "Noticia 1",
+        "descripcion":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque imperdiet .Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque imperdiet. <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque imperdiet .Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque imperdiet.",
+        "url": "https://www.google.com",
+        "imagennoticia":"https://picsum.photos/400/300"
+
+
+    },
+
+    {
+        "titulo": "Noticia 2",
+        "descripcion":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque imperdiet .Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque imperdiet. <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque imperdiet .Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque imperdiet.",
+        "url": "https://www.google.com",
+        "imagennoticia":"https://picsum.photos/500/200"
+
+    },
+
+    {
+        "titulo": "Noticia 3",
+        "descripcion":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque imperdiet .Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque imperdiet. <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque imperdiet .Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque imperdiet.",
+        "url": "https://www.google.com",
+        "imagennoticia":"https://picsum.photos/600/600"
+
+
+    }
+
+
+]
