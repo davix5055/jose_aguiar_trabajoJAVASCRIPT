@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Master</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" href="../images/smartphone.png">
+    
+    
+</head>
+<body>
+
+    <!--Header / Barra de Navegacion-->
+    <header>
+        <div class="logo"><h1>Tech Master</h1>
+            <img src="../images/smartphone.png" alt="logo_image" width="512" height="512">
+        </div>
+        <div class="navbar">
+            <ul class="navegacion">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./galeria.html" >Galeria</a></li>
+                <li><a href="./mapa.html">Mapa</a></li>
+                <li><a href="./presupuesto.html" class="active">Presupuesto</a></li>
+
+            </ul>
+        </div>
+
+
+    </header>
+
+    <!--Seccion Formulario-->
+    <main>
+         <!--Inicio de Formulario-->
+        <form id="formulario" name="formulario" action="procesar.php" method="POST">
+            <!--Seccion Datos Personales-->
+        <fieldset class="datos">
+            <legend>Datos personales</legend>
+
+            <div class="grupoformulario">
+            <label for="nombre">Nombre: </label>
+            <input type="text" name="nombre" id="nombre" placeholder="Introduce tu nombre" required maxlength="15">
+            <span id="alertanombre" class="alerta" hidden></span>
+            </div>
+
+            <div class="grupoformulario">
+            <label for="apellido">Apellido: </label>
+            <input type="text" name="apellido" id="apellido" placeholder="Introduce tu apellido" required maxlength="40">
+            <span id="alertaapellido" class="alerta" hidden></span>
+            </div>
+
+            <div class="grupoformulario">
+            <label for="telefono">Telefono: </label>
+            <input type="tel" name="telefono" id="telefono" placeholder="Introduce tu nro de telefono" required maxlength="9">
+            <span id="alertatelefono" class="alerta" hidden></span>
+            </div>
+
+            <div class="grupoformulario">
+            <label for="correo">Correo: </label>
+            <input type="text" name="correo" id="correo" placeholder="Introduce tu email" required maxlength="50">
+            <span id="alertacorreo" class="alerta" hidden></span>
+            </div>
+
+        </fieldset>
+         <!--Seccion Presupuesto-->
+        <fieldset class="presupuesto" id="presupuesto">
+
+        <legend>Presupuesto</legend>
+             <!--Productos-->
+        <div class="grupoformulario">
+            <label for="producto">Reserva un nuevo producto: </label>
+
+            <select name="producto" id="producto" required>
+                <option value="" disabled selected>Elige un producto</option>
+                <option value="150">Samsung</option>
+                <option value="200">iPhone</option>
+                <option value="100">Motorolla</option>
+            </select>
+             </div>
+             <!--Dias-->
+             <div class="grupoformulario">
+                <label for="dias">Dias para la entrega: </label>
+                <input type="number" name="dias" id="dias" required disabled>
+                <span id="infodescuento">Descuento: Hasta 3 dias habiles recibe un 10% de descuento y a partir de 5 dias un 25%! </span>
+                </div>
+                <!--Extras-->
+                <p>Extras</p>
+                <div class="grupoformulario" id="extras">
+                    <div class="grupoextra">
+                    <input type="checkbox" name="garantia" id="garantia" disabled class="extra">
+                    <label for="garantia">Garantia 1 año ($50) </label>
+                    </div>
+
+                    <div class="grupoextra">
+                    <input type="checkbox" name="protector" id="protector" disabled class="extra">
+                    <label for="protector">Protector de Pantalla ($10) </label>
+                    </div>
+
+                    <div class="grupoextra">
+                    <input type="checkbox" name="funda" id="funda" disabled class="extra">
+                    <label for="funda">Funda transparente ($5)</label> 
+                    </div>
+
+                    <div class="grupoextra">
+                    <input type="checkbox" name="auriculares" id="auriculares" disabled class="extra">
+                    <label for="auriculares">Auriculares ($30) </label>
+                    </div>
+                </div>
+                <!--Precio Y Presupuesto Final-->
+                <div class="grupoformulario" id="inputpresupuesto">
+                    <label for="preciopresupuesto">Presupuesto: </label>
+                    <input type="text" name="preciopresupuesto" id="preciopresupuesto" disabled readonly>
+
+                    <label for="precioextra">Extras: </label>
+                    <input type="text" name="precioextra" id="precioextra" disabled readonly>
+
+                    <label for="descuento">Descuento: </label>
+                    <input type="text" name="descuento" id="descuento" disabled readonly>
+
+                    <label for="presupuestofinal">Presupuesto Final: </label>
+                    <input type="text" name="presupuestofinal" id="presupuestofinal" disabled readonly>
+                    </div>
+
+        </fieldset>
+
+        <!--Condiciones-->
+        <fieldset class="condiciones">
+            <legend>Condiciones</legend>
+            <div class="grupoformulario">
+            <label for="privacidad">Estoy de acuerdo con la politica de privacidad de esta pagina web </label>
+            <input type="checkbox" name="privacidad" id="privacidad" required>
+         </div>
+
+
+        </fieldset>
+
+        <!--Boton de Envio y Reset-->
+        <div class="enviar">
+        <input type="reset" value="Resetear" id="resetear">
+         <input type="submit" value="Enviar Formulario" id="enviar">
+         </div>
+    
+    </form>
+
+
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <div class="rrss">
+            <a href="https://www.facebook.com"><img src="../images/rrss/log-facebook2.svg" alt="logo facebook" width="800" height="800"></a>
+            <a href="https://www.instagram.com"><img src="../images/rrss/logo-instagram2.svg" alt="logo instagram" width="150" height="150"></a>
+            <a href="https://www.youtube.com"><img src="../images/rrss/logo-youtube.svg" alt="logo youtube" width="800" height="800"></a>
+
+
+        </div>
+
+     <p>Todos los derechos reservados <br>
+        C. de San Bernardo, 10, Centro, 28015 Madrid, España <br>
+        © Tech Master
+    </p>
+    </footer>
+
+
+    <!--JavaScript - jQuery-->
+       <script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+  crossorigin="anonymous"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
